@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://locationtvdeluxe.com/sitemap.xml

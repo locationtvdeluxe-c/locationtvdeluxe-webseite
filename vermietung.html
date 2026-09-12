@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Metadata -->
+    <title>Vermietung &amp; Verleih — Immobilien, Apartments &amp; Kamera-Equipment | LocationTV Deluxe</title>
+    <meta name="description" content="Moderne Wohn- und Mietobjekte sowie professionelles Verleih-Equipment: DJI Mic Mini 2, DJI Flow 2 Pro Gimbal, Insta360 X4 Air 360-Grad-Kamera und mehr.">
+    
+    <!-- Umami Analytics -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="807057ad-f9e7-41c7-99c2-14116bdb0aee"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Design & Styling -->
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: rgba(22, 27, 34, 0.75);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-gold: #d4af37;
+            --accent-gold-hover: #f1c40f;
+            --text-main: #f0f3f6;
+            --text-muted: #9aa0a6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%),
+                radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+            color: var(--text-main);
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header Bereich */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .header h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        .glass-card h2 {
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .glass-card p {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+
+        /* Feature List & Grids */
+        .property-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 600px) {
+            .property-features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .feature-item strong {
+            color: var(--accent-gold);
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .feature-item span {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        /* Primary CTA Button */
+        .btn-primary {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+            color: #000000;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 16px;
+            border-radius: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, #f1c40f 0%, #d4af37 100%);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent-gold);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <a href="/" class="back-link">&larr; Zurück zur Hauptseite</a>
+
+        <!-- Brand Header -->
+        <header class="header">
+            <span class="badge">Vermietung &amp; Verleih</span>
+            <h1>VERMIETUNG &amp; EQUIPMENT</h1>
+            <p>Immobilien, Apartments &amp; professionelles Video-Equipment</p>
+        </header>
+
+        <!-- Immobilien Sektion -->
+        <section class="glass-card">
+            <h2>Wohnraum mit Wohlfühlfaktor</h2>
+            <p style="text-align: center;">
+                Wir bieten hochwertig gepflegte Mietwohnungen und Apartments in zentraler Lage. Transparente Kommunikation, nachhaltige Instandhaltung und professioneller Service stehen bei uns an erster Stelle.
+            </p>
+
+            <div class="property-features">
+                <div class="feature-item">
+                    <strong>📍 Zentrale Lage</strong>
+                    <span>Hervorragende Anbindung an Nahverkehr, Einkaufsmöglichkeiten &amp; Freizeit.</span>
+                </div>
+                <div class="feature-item">
+                    <strong>🏢 Gepflegter Zustand</strong>
+                    <span>Regelmäßige Wartung, moderne Renovierungen und hohe Wohnqualität.</span>
+                </div>
+                <div class="feature-item">
+                    <strong>🔑 Faire Konditionen</strong>
+                    <span>Transparente Mietverträge ohne versteckte Nebenkosten.</span>
+                </div>
+                <div class="feature-item">
+                    <strong>🤝 Direkter Kontakt</strong>
+                    <span>Schnelle Rückmeldungen &amp; persönliche Ansprechpartner bei allen Anliegen.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipment Verleih Sektion -->
+        <section class="glass-card">
+            <h2>Media &amp; Equipment Verleih</h2>
+            <p style="text-align: center;">
+                Für deine Videoprojekte, Social-Media-Produktionen oder Urlaubsreisen bieten wir aktuelles High-End-Video- und Audio-Equipment zum Verleih an:
+            </p>
+
+            <div class="property-features">
+                <div class="feature-item">
+                    <strong>🎙️ DJI Mic Mini 2</strong>
+                    <span>Kompaktes Funkmikrofon-Set für glasklaren Ton, perfekte Sprachverständlichkeit und einfache Handhabung unterwegs.</span>
+                </div>
+                <div class="feature-item">
+                    <strong>🎬 DJI Flow 2 Pro Gimbal</strong>
+                    <span>Professionelle Bildstabilisierung und intelligentes Tracking für butterweiche, kinetische Kamerafahrten.</span>
+                </div>
+                <div class="feature-item" style="grid-column: 1 / -1;">
+                    <strong>📷 Insta360 X4 Air 360-Grad-Kamera</strong>
+                    <span>Leistungsstarke 360-Grad-Actioncam inklusive Fernsteuerung für beeindruckende Immersion und flexible Perspektiven. <br><em style="color: var(--accent-gold);">Inklusive zzgl. Invisible Selfie-Stick &amp; passenden Stativen.</em></span>
+                </div>
+            </div>
+
+            <a href="mailto:kontakt@locationtvdeluxe.com?subject=Anfrage%20Vermietung%20und%20Equipment" class="btn-primary">
+                Jetzt Miet- oder Equipment-Anfrage senden
+            </a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 LOCATIONTV DELUXE. ALL RIGHTS RESERVED.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bodrum – Die Perle der Ägäis | LocationTV Deluxe</title>
+  <meta name="description" content="Erleben Sie Bodrum in atemberaubendem 4K Ultra HD. Ein exklusives Filmporträt über die Perle der Ägäis von LocationTV Deluxe.">
+  
+  <!-- Google Fonts für edle Typografie -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #0b0b0c;
+      --card-bg: #141416;
+      --card-border: #26262a;
+      --accent-gold: #D4AF37;
+      --accent-gold-hover: #f0c84b;
+      --text-main: #f0f0f2;
+      --text-muted: #9e9ea6;
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    /* HEADER & NAV */
+    header {
+      background-color: rgba(11, 11, 12, 0.95);
+      border-bottom: 1px solid var(--card-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo-main {
+      font-family: var(--font-heading);
+      font-size: 1.7rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 1;
+    }
+
+    .logo-main span {
+      color: var(--accent-gold);
+    }
+
+    .logo-sub {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 0.95rem;
+      color: var(--accent-gold);
+      letter-spacing: 1.5px;
+      margin-top: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    nav a:hover, nav a.active {
+      color: var(--accent-gold);
+    }
+
+    /* LAYOUT CONTAINER */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* HERO / FILM HEADER */
+    .hero-title-group {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .badge-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .badge-new {
+      background: #D4AF37;
+      color: #000;
+      border: 1px solid #D4AF37;
+    }
+
+    h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    /* VIDEO PLAYER PLACEHOLDER */
+    .video-showcase {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.85)), url('IMG_4690.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .video-overlay {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    /* OPTIONS GRID (SKOOL, TENTARY, DCP) */
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-bottom: 60px;
+    }
+
+    .option-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .option-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-gold);
+    }
+
+    .option-header {
+      margin-bottom: 20px;
+    }
+
+    .option-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .option-title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .option-subtitle {
+      color: var(--accent-gold);
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .option-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .option-list {
+      list-style: none;
+      margin-bottom: 25px;
+    }
+
+    .option-list li {
+      color: var(--text-main);
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .option-list li::before {
+      content: "✓";
+      color: var(--accent-gold);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .btn-action {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(135deg, #D4AF37 0%, #aa8521 100%);
+      color: #000;
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+    }
+
+    .btn-action:hover {
+      background: linear-gradient(135deg, #f0c84b 0%, #D4AF37 100%);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--accent-gold);
+      border: 1px solid var(--accent-gold);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(212, 175, 55, 0.1);
+      color: #fff;
+    }
+
+    /* SECTIONS COMMON */
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      margin-bottom: 25px;
+      font-size: 0.95rem;
+    }
+
+    /* FILM FACTS GRID */
+    .facts-grid {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+
+    .fact-item span {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .fact-item strong {
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    /* INHALTSANGABE */
+    .synopsis-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 35px;
+      margin-bottom: 50px;
+    }
+
+    .synopsis-de {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #e0e0e5;
+      margin-bottom: 25px;
+    }
+
+    .synopsis-en {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      padding-top: 20px;
+      border-top: 1px solid var(--card-border);
+    }
+
+    .synopsis-en h4 {
+      color: var(--accent-gold);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    /* CAST & CREW & SPECS GRID */
+    .details-two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .detail-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 30px;
+    }
+
+    .detail-card h3 {
+      font-family: var(--font-heading);
+      color: #fff;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 10px;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .detail-row:last-child {
+      border-bottom: none;
+    }
+
+    .detail-label {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .detail-value {
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    /* GALERIE GRID */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-bottom: 60px;
+    }
+
+    .gallery-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-gold);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-card-content {
+      padding: 18px;
+      flex-grow: 1;
+    }
+
+    .gallery-card-content h3 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .gallery-card-content p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #060607;
+      border-top: 1px solid var(--card-border);
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-box">
+        <div class="logo-main">Location<span>TV</span></div>
+        <div class="logo-sub">Deluxe</div>
+      </a>
+
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="bodrum.html" class="active">Bodrum</a>
+        <a href="mykonos.html">Mykonos</a>
+        <a href="filmverleih.html">Filmverleih</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <!-- HERO SECTION -->
+    <div class="hero-title-group">
+      <div class="badge-group">
+        <span class="badge badge-new">Neu</span>
+        <span class="badge">4K Ultra HD</span>
+      </div>
+      <h1>BODRUM – Die Perle der Ägäis</h1>
+      <p class="subtitle">Eine faszinierende Dokumentation über das historische Erbe, das türkisfarbene Meer und den exklusiven Zauber der südwestlichen Ägäisküste.</p>
+    </div>
+
+    <!-- VIDEO TRAILER SHOWCASE -->
+    <div class="video-showcase">
+      <div class="video-overlay">
+        <h2 style="font-family: var(--font-heading); color: #fff; margin-bottom: 8px;">Offizieller Trailer</h2>
+        <p style="color: #ccc; font-size: 0.9rem;">Erleben Sie erste Impressionen aus der 90-minütigen Dokumentation.</p>
+        <a href="#zugang-optionen" class="btn-action" style="margin-top: 15px;">Jetzt Anschauen / Kaufen</a>
+      </div>
+    </div>
+
+    <!-- OPTIONEN ZUGANG / KAUF / KINO -->
+    <section id="zugang-optionen">
+      <h2 class="section-title">Wählen Sie Ihre Option</h2>
+      <p class="section-subtitle">Exklusiver Zugang für Mitglieder, Direktkauf fürs Heimkino oder Kino-Lizensierung</p>
+
+      <div class="options-grid">
+        
+        <!-- CARD 1: SKOOL COMMUNITY -->
+        <div class="option-card">
+          <div class="option-header">
+            <span class="option-icon">🎓</span>
+            <h3 class="option-title">Community Access</h3>
+            <div class="option-subtitle">Skool Deluxe Community</div>
+            <p class="option-desc">Schauen oder erwerben Sie den Film direkt im Classroom unserer exklusiven Deluxe-Community auf Skool.</p>
+          </div>
+          <ul class="option-list">
+            <li>Direkter Zugang im Skool Classroom</li>
+            <li>Integrierter Austausch mit Mitgliedern</li>
+            <li>Exklusive Zusatzinhalte & Hintergrundinfos</li>
+            <li>Ideal für Community-Mitglieder</li>
+          </ul>
+          <a href="#" class="btn-action">Zu Skool öffnen</a>
+        </div>
+
+        <!-- CARD 2: TENTARY PRIVATKAUF -->
+        <div class="option-card">
+          <div class="option-header">
+            <span class="option-icon">🛒</span>
+            <h3 class="option-title">Privatkauf & Miete</h3>
+            <div class="option-subtitle">Digital auf Tentary</div>
+            <p class="option-desc">Der unkomplizierte Direktkauf für Ihr Heimkino. Sofortiger Download oder Online-Streaming.</p>
+          </div>
+          <ul class="option-list">
+            <li>Sofortige Bereitstellung nach Kauf</li>
+            <li>Beste Streaming- & Download-Qualität</li>
+            <li>Kein Registrierungszwang für Skool</li>
+            <li>Sichere & schnelle Bezahlung</li>
+          </ul>
+          <a href="#" class="btn-action">Auf Tentary erwerben</a>
+        </div>
+
+        <!-- CARD 3: KINOLIZENZ -->
+        <div class="option-card">
+          <div class="option-header">
+            <span class="option-icon">🎬</span>
+            <h3 class="option-title">Gewerbe & Vorführung</h3>
+            <div class="option-subtitle">Kinolizenz & DCP</div>
+            <p class="option-desc">Bringen Sie „Bodrum“ auf die große Leinwand. Inklusive aller gewerblichen Vorführrechte.</p>
+          </div>
+          <ul class="option-list">
+            <li>Digital Cinema Package (DCP) Verfügbarkeit</li>
+            <li>Anpassbare Lizenzen für Programmkinos</li>
+            <li>Download-Link oder Medienversand</li>
+            <li>Persönliche Abwicklung & Support</li>
+          </ul>
+          <a href="filmverleih.html" class="btn-action btn-secondary">Kinolizenz anfragen</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KEY FACTS GRID -->
+    <section>
+      <div class="facts-grid">
+        <div class="fact-item">
+          <span>Genre</span>
+          <strong>Dokumentation / Kultur</strong>
+        </div>
+        <div class="fact-item">
+          <span>FSK</span>
+          <strong>ab 0 Jahre</strong>
+        </div>
+        <div class="fact-item">
+          <span>Dauer</span>
+          <strong>90 Minuten</strong>
+        </div>
+        <div class="fact-item">
+          <span>Produktionsjahr</span>
+          <strong>2026</strong>
+        </div>
+        <div class="fact-item">
+          <span>Kinostart</span>
+          <strong>13.08.2026 | 1. Spielwoche</strong>
+        </div>
+        <div class="fact-item">
+          <span>Verleih</span>
+          <strong>Location TV Deluxe</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- INHALTSANGABE (ZWEISPRACHIG) -->
+    <section>
+      <h2 class="section-title">Inhalt & Beschreibung</h2>
+      <p class="section-subtitle">Über das Filmprojekt</p>
+
+      <div class="synopsis-box">
+        <div class="synopsis-de">
+          Bodrum ist eine faszinierende Stadt an der südwestlichen Ägäisküste der Türkei, die für ihre eindrucksvolle Kombination aus reicher Geschichte und lebendiger Küstenatmosphäre bekannt ist. Das auffälligste Wahrzeichen ist das historische Kastell von St. Peter (Bodrum Castle), das im 15. Jahrhundert von den Kreuzrittern erbaut wurde und heute das renommierte Museum für Unterwasserarchäologie beherbergt. Neben antiken Schätzen wie den Überresten des Mausoleums von Halikarnassos beeindruckt Bodrum durch malerische Yachthäfen, charakteristische weiße Kalkhäuser und kristallklares Ägäis-Wasser.
+        </div>
+
+        <div class="synopsis-en">
+          <h4>English Version</h4>
+          Bodrum is a fascinating city on the southwestern Aegean coast of Turkey, known for its impressive blend of rich history and vibrant coastal atmosphere. The most striking landmark is the historic Castle of St. Peter, built by the Knights Hospitaller in the 15th century, which now houses the renowned Museum of Underwater Archaeology. Alongside ancient wonders like the remains of the Mausoleum at Halicarnassus, Bodrum captivates with its picturesque marinas, characteristic whitewashed houses, and crystal-clear Aegean waters.
+        </div>
+      </div>
+    </section>
+
+    <!-- CAST & CREW UND DETAILS -->
+    <section>
+      <div class="details-two-col">
+        
+        <!-- CAST & CREW -->
+        <div class="detail-card">
+          <h3>CAST & CREW</h3>
+          <div class="detail-row">
+            <span class="detail-label">Cast</span>
+            <span class="detail-value">Location TV Deluxe Team,<br>Zeitzeugen & Historiker</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Regie & Produktion</span>
+            <span class="detail-value">Location TV Deluxe</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Originaltitel</span>
+            <span class="detail-value">Bodrum – Die Perle der Ägäis</span>
+          </div>
+        </div>
+
+        <!-- FILM-DETAILS -->
+        <div class="detail-card">
+          <h3>FILM-DETAILS</h3>
+          <div class="detail-row">
+            <span class="detail-label">Produktionsjahr</span>
+            <span class="detail-value">2026</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Produktionsland</span>
+            <span class="detail-value">Deutschland / Türkei</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Verleih</span>
+            <span class="detail-value">Location TV Deluxe</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Format</span>
+            <span class="detail-value">4K UHD / DCP</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALERIE SECTION -->
+    <section id="galerie">
+      <h2 class="section-title">Impressionen aus Bodrum</h2>
+      <p class="section-subtitle">Ein exklusiver Einblick in die Kulissen und Drehorte des Films</p>
+
+      <div class="gallery-grid">
+        
+        <!-- Bild 1 -->
+        <div class="gallery-card">
+          <img src="IMG_4689.jpeg" onerror="this.onerror=null; this.src='IMG_4689.JPEG';" alt="I Love Bodrum Schriftzug am Hafenplatz">
+          <div class="gallery-card-content">
+            <h3>Hafenpromenade</h3>
+            <p>Der pulsierende Mittelpunkt der Stadt mit dem bekannten Fotospot und lebendiger Atmosphäre.</p>
+          </div>
+        </div>
+
+        <!-- Bild 2 -->
+        <div class="gallery-card">
+          <img src="IMG_4690.jpeg" onerror="this.onerror=null; this.src='IMG_4690.JPEG';" alt="Yachten und Segelboote vor Bodrum">
+          <div class="gallery-card-content">
+            <h3>Bucht & Yachthafen</h3>
+            <p>Klassische Gulets und elegante Yachten vor der charakteristischen weißen Hangkulisse.</p>
+          </div>
+        </div>
+
+        <!-- Bild 3 -->
+        <div class="gallery-card">
+          <img src="IMG_4691.jpeg" onerror="this.onerror=null; this.src='IMG_4691.JPEG';" alt="Strandleben in Bodrum">
+          <div class="gallery-card-content">
+            <h3>Ägäisches Meer</h3>
+            <p>Kristallklares Wasser, entspannte Beach-Atmosphäre und Fernweh-Blick auf die Weite der Ägäis.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <span>•</span>
+      <a href="datenschutz.html">Datenschutz</a>
+      <span>•</span>
+      <a href="filmverleih.html">Filmverleih & B2B</a>
+    </div>
+    <p>&copy; 2026 LocationTV Deluxe. Alle Rechte vorbehalten.</p>
+  </footer>
+
+</body>
+</html>

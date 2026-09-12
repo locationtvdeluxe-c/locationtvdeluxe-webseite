@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Metadata -->
+    <title>LocationTV Deluxe — Reisefilme, Event-Dokumentationen &amp; Drohnenaufnahmen</title>
+    <meta name="description" content="LocationTV Deluxe produziert exklusive Reisefilme, Event-Dokumentationen und Drohnenaufnahmen. Jetzt Backfischfest Worms, Bodrum, Mykonos, Norwegen und mehr entdecken.">
+    <meta name="keywords" content="LocationTV Deluxe, Reisefilm, Eventfilm, Backfischfest Worms, Drohnenaufnahmen, Content Creation, Videoproduktion">
+    <link rel="canonical" href="https://locationtvdeluxe.com/">
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://locationtvdeluxe.com/">
+    <meta property="og:title" content="LocationTV Deluxe — Reisefilme & Event-Dokumentationen">
+    <meta property="og:description" content="Exklusive Reisefilme, Drohnenaufnahmen und Event-Spezials. Jetzt Backfischfest Worms, Bodrum, Mykonos, Norwegen entdecken.">
+    <meta property="og:image" content="https://locationtvdeluxe.com/IMG_5065.jpeg">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="LocationTV Deluxe">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LocationTV Deluxe — Reisefilme & Event-Dokumentationen">
+    <meta name="twitter:description" content="Exklusive Reisefilme, Drohnenaufnahmen und Event-Spezials aus aller Welt.">
+    <meta name="twitter:image" content="https://locationtvdeluxe.com/IMG_5065.jpeg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LocationTV Deluxe",
+      "url": "https://locationtvdeluxe.com",
+      "logo": "https://locationtvdeluxe.com/LocationTV%20Deluxe%20Logo.pdf.png",
+      "description": "LocationTV Deluxe produziert selbstständig Reisefilme, Event-Dokumentationen und Drohnenaufnahmen. Content Creation für Veranstalter, Firmen und Messen.",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@locationtvdeluxe.com",
+        "contactType": "customer service",
+        "availableLanguage": "de"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "LocationTV Deluxe",
+      "url": "https://locationtvdeluxe.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://locationtvdeluxe.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Umami Analytics -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="807057ad-f9e7-41c7-99c2-14116bdb0aee"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Design & Styling -->
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: rgba(22, 27, 34, 0.75);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-gold: #d4af37;
+            --accent-gold-hover: #f1c40f;
+            --text-main: #f0f3f6;
+            --text-muted: #9aa0a6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%),
+                radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+            color: var(--text-main);
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header Bereich */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-title {
+            font-size: 2.3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .logo-title span {
+            color: var(--accent-gold);
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .featured-card {
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .glass-card h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .glass-card p {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+
+        /* Responsive Image Styling */
+        .card-image-container {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .card-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Navigation & Link Grid */
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .nav-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .nav-item:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-2px);
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .nav-item h3 {
+            font-size: 1.05rem;
+            color: var(--accent-gold);
+            margin-bottom: 5px;
+        }
+
+        .nav-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+            color: #000000;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 16px;
+            border-radius: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+            margin-top: 15px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, #f1c40f 0%, #d4af37 100%);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            color: var(--accent-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1 class="logo-title">LOCATIONTV <span>DELUXE</span></h1>
+            <p>High-End Reisefilme, Drohnenaufnahmen &amp; Event-Dokumentationen</p>
+        </header>
+
+        <!-- HERVORGEHOBENES FILM-SPEZIAL: BACKFISCHFEST WORMS -->
+        <section class="glass-card featured-card">
+            <span class="badge">Neuerscheinung • Event-Spezial</span>
+            <h2>Backfischfest Worms — Der große Festumzug</h2>
+            
+            <div class="card-image-container">
+                <img src="IMG_5065.jpeg" alt="Backfischfest Worms Spezial" class="card-image">
+            </div>
+
+            <p>
+                Erlebe den legendären 18-minütigen Festumzug des Wormser Backfischfests hautnah! Inklusive stimmungsvoller Vereinspräsentationen, exklusiver Impressionen und mitreißenden 360°-Videoperspektiven.
+            </p>
+
+            <a href="https://locationtvdeluxe.tentary.com/p/backfischfestworms" target="_blank" rel="noopener" class="btn-primary">
+                🎬 Film jetzt bei Tentary ansehen &amp; kaufen
+            </a>
+        </section>
+
+        <!-- Weitere Themen & Angebote -->
+        <section class="glass-card">
+            <h2>Entdecke unsere Kategorien</h2>
+            
+            <div class="nav-grid">
+                <a href="contentcreation.html" class="nav-item">
+                    <h3>Content Creation</h3>
+                    <p>Professionelle Medienproduktion &amp; Video-Assets.</p>
+                </a>
+
+                <a href="heidelberg.html" class="nav-item">
+                    <h3>Heidelberg</h3>
+                    <p>Romantische Altstadt und Schloss aus der Luft.</p>
+                </a>
+
+                <a href="bodrum.html" class="nav-item">
+                    <h3>Bodrum Spezial</h3>
+                    <p>Exklusiver Reisedokumentarfilm von der Ägäis.</p>
+                </a>
+
+                <a href="mykonos.html" class="nav-item">
+                    <h3>Mykonos Highlights</h3>
+                    <p>Traumhafte Impressionen aus Griechenland.</p>
+                </a>
+
+                <a href="norwegen-kreuzfahrt.html" class="nav-item">
+                    <h3>Norwegen Kreuzfahrt</h3>
+                    <p>Fjorde &amp; Naturwunder hautnah erlebt.</p>
+                </a>
+
+                <a href="speyer.html" class="nav-item">
+                    <h3>Speyer</h3>
+                    <p>Dom, Altpörtel &amp; Stadtimpressionen.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 LOCATIONTV DELUXE. ALL RIGHTS RESERVED.</p>
+            <p style="margin-top: 10px;">
+                <a href="impressum.html">Impressum</a> | 
+                <a href="datenschutz.html">Datenschutz</a>
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

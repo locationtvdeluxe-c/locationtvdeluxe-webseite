@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Mykonos – Der Film | Skool Community, Tentary & Kinolizenz</title>
+  <meta name="description" content="Der cineastische Film über Mykonos, die Perle der Kykladen. Jetzt in der Deluxe Skool Community ansehen, auf Tentary kaufen oder als Kino-DCP lizensieren.">
+  <meta name="keywords" content="Mykonos Film, Skool Deluxe Community, Mykonos Doku, Tentary, Kino DCP Mykonos, Location TV Deluxe">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Mykonos – Der Film (Skool Community, Kauf & Kinoverleih)">
+  <meta property="og:description" content="Erleben Sie Mykonos: Exklusiv in unserer Skool Community, digital auf Tentary oder als Kino-DCP für Vorführungen.">
+  <meta property="og:type" content="video.movie">
+  <meta property="og:url" content="https://www.skool.com/deluxe-community-3103/classroom/6606bf73?md=a34f3ed2507746afa02ce8a92c8482b7">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Movie",
+    "name": "Mykonos",
+    "description": "Ein cineastisches Porträt über Mykonos, die wohl bekannteste Insel der griechischen Kykladen im Ägäischen Meer.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Skool Community Classroom",
+        "url": "https://www.skool.com/deluxe-community-3103/classroom/6606bf73?md=a34f3ed2507746afa02ce8a92c8482b7"
+      },
+      {
+        "@type": "Offer",
+        "name": "Digitaler Kauf / Miete (Tentary)",
+        "url": "https://locationtvdeluxe.tentary.com/p/mykonos"
+      }
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "Location TV Deluxe"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #0a192f;
+      --accent: #d97706;
+      --accent-hover: #b45309;
+      --skool-color: #0284c7;
+      --skool-hover: #0369a1;
+      --bg: #070d17;
+      --card-bg: #111d33;
+      --card-border: #1e2d4a;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Navigation */
+    nav {
+      background: rgba(7, 13, 23, 0.95);
+      border-bottom: 1px solid var(--card-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 90px 0 60px;
+      text-align: center;
+      background: radial-gradient(circle at center, #111d33 0%, #070d17 100%);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(217, 119, 6, 0.15);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .hero .subtitle {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 800px;
+      margin: 0 auto 36px;
+    }
+
+    /* Buttons */
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-skool {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--skool-color);
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn-skool:hover {
+      background-color: var(--skool-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--accent);
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      color: var(--text);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--card-border);
+      cursor: pointer;
+      font-size: 1rem;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* Option Cards (Skool vs. Tentary vs. Kino) */
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin: 60px 0;
+    }
+
+    .option-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: border-color 0.2s;
+    }
+
+    .option-card.skool-card {
+      border-color: var(--skool-color);
+      background: linear-gradient(180deg, #0d2342 0%, var(--card-bg) 100%);
+    }
+
+    .option-card.tentary-card {
+      border-color: var(--accent);
+    }
+
+    .option-header {
+      margin-bottom: 20px;
+    }
+
+    .option-type {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .type-skool { color: #38bdf8; }
+    .type-tentary { color: var(--accent); }
+    .type-kino { color: #a855f7; }
+
+    .option-title {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .option-description {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+
+    .feature-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      color: #cbd5e1;
+      font-size: 0.92rem;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .skool-card .feature-list li::before {
+      color: #38bdf8;
+    }
+
+    /* Details Section */
+    .film-details {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 40px;
+      margin-bottom: 60px;
+    }
+
+    .film-details h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .film-details p {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    /* Section Header */
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      font-size: 1rem;
+    }
+
+    /* Form Styles */
+    .contact-form-section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 850px;
+      margin: 0 auto 80px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full-width {
+      grid-column: span 2;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .form-group input, .form-group textarea, .form-group select {
+      background: #070d17;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 12px 16px;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      .options-grid { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+      .form-group.full-width { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container nav-container">
+      <a href="#" class="logo">LOCATION TV <span>DELUXE</span></a>
+      <ul class="nav-links">
+        <li><a href="#bezugs-wege">Optionen & Kauf</a></li>
+        <li><a href="#ueber-den-film">Über den Film</a></li>
+        <li><a href="#kino-anfrage">Kino-Anfrage</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <span class="badge">Filmporträt & Dokumentation</span>
+      <h1>MYKONOS</h1>
+      <p class="subtitle">
+        Die faszinierende Schönheit der Kykladen-Insel. Erhältlich in unserer Skool Community, als direkter Download via Tentary oder als Kino-DCP.
+      </p>
+      <div class="btn-group">
+        <a href="https://www.skool.com/deluxe-community-3103/classroom/6606bf73?md=a34f3ed2507746afa02ce8a92c8482b7" target="_blank" rel="noopener" class="btn-skool">
+          In Skool Community ansehen ↗
+        </a>
+        <a href="https://locationtvdeluxe.tentary.com/p/mykonos" target="_blank" rel="noopener" class="btn-primary">
+          Auf Tentary kaufen ↗
+        </a>
+        <a href="#kino-anfrage" class="btn-secondary">
+          Kino-DCP anfragen
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- BEZUGSWEGE GRID -->
+    <section id="bezugs-wege" class="options-grid">
+      
+      <!-- Option 1: Skool Community -->
+      <div class="option-card skool-card">
+        <div class="option-header">
+          <span class="option-type type-skool">🎓 Community Access</span>
+          <h2 class="option-title">Skool Deluxe Community</h2>
+          <p class="option-description">
+            Schauen oder erwerben Sie den Film direkt im Classroom unserer exklusiven Deluxe-Community auf Skool.
+          </p>
+        </div>
+        <div>
+          <ul class="feature-list">
+            <li>Direkter Zugang im Skool Classroom</li>
+            <li>Integrierter Austausch mit Mitgliedern</li>
+            <li>Exklusive Zusatzinhalte & Hintergrundinfos</li>
+            <li>Ideal für Community-Mitglieder</li>
+          </ul>
+          <a href="https://www.skool.com/deluxe-community-3103/classroom/6606bf73?md=a34f3ed2507746afa02ce8a92c8482b7" target="_blank" rel="noopener" class="btn-skool" style="width: 100%;">
+            Zu Skool öffnen
+          </a>
+        </div>
+      </div>
+
+      <!-- Option 2: Tentary -->
+      <div class="option-card tentary-card">
+        <div class="option-header">
+          <span class="option-type type-tentary">🛒 Privatkauf & Miete</span>
+          <h2 class="option-title">Digital auf Tentary</h2>
+          <p class="option-description">
+            Der unkomplizierte Direktkauf für Ihr Heimkino. Sofortiger Download oder Online-Streaming.
+          </p>
+        </div>
+        <div>
+          <ul class="feature-list">
+            <li>Sofortige Bereitstellung nach Kauf</li>
+            <li>Beste Streaming- & Download-Qualität</li>
+            <li>Kein Registrierungszwang für Skool</li>
+            <li>Sichere & schnelle Bezahlung</li>
+          </ul>
+          <a href="https://locationtvdeluxe.tentary.com/p/mykonos" target="_blank" rel="noopener" class="btn-primary" style="width: 100%;">
+            Auf Tentary erwerben
+          </a>
+        </div>
+      </div>
+
+      <!-- Option 3: Kino & Gewerbe -->
+      <div class="option-card">
+        <div class="option-header">
+          <span class="option-type type-kino">🎬 Gewerbe & Vorführung</span>
+          <h2 class="option-title">Kinolizenz & DCP</h2>
+          <p class="option-description">
+            Bringen Sie „Mykonos“ auf die große Leinwand. Inklusive aller gewerblichen Vorführrechte.
+          </p>
+        </div>
+        <div>
+          <ul class="feature-list">
+            <li>Digital Cinema Package (DCP) Verfügbarkeit</li>
+            <li>Anpassbare Lizenzen für Programmkinos</li>
+            <li>Download-Link oder Medienversand</li>
+            <li>Persönliche Abwicklung & Support</li>
+          </ul>
+          <a href="#kino-anfrage" class="btn-secondary" style="width: 100%;">
+            Kinolizenz anfragen
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ÜBER DEN FILM -->
+    <section id="ueber-den-film" class="film-details">
+      <h2>Über den Film „Mykonos“</h2>
+      <p>
+        Mykonos gehört zur Inselgruppe der Kykladen im Ägäischen Meer. Die Insel ist weltweit für ihre sommerliche Atmosphäre bekannt – an Stränden wie Paradise und Super Paradise bieten zahlreiche Bars mitreißende Sounds. Zu den ikonischen Wahrzeichen gehören die historischen Windmühlen aus dem 16. Jahrhundert, die aufgereiht auf einem Hügel oberhalb der Stadt Mykonos thronen.
+      </p>
+    </section>
+
+    <!-- KINO- / VERLEIHANFRAGE FORMULAR -->
+    <section id="kino-anfrage">
+      <h2 class="section-title">Anfrage für Kinobetreiber & Event-Veranstalter</h2>
+      <p class="section-subtitle">
+        Senden Sie uns Ihre Vorführanfrage für eine DCP-Kinolizenz oder gewerbliche Vorführung.
+      </p>
+
+      <div class="contact-form-section">
+        <form action="#" method="POST">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="vorname">Vorname / Ansprechpartner *</label>
+              <input type="text" id="vorname" name="vorname" required placeholder="Max">
+            </div>
+            
+            <div class="form-group">
+              <label for="nachname">Nachname / Kino-Name *</label>
+              <input type="text" id="nachname" name="nachname" required placeholder="Mustermann / Lichtspielhaus GmbH">
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-Mail Adresse *</label>
+              <input type="email" id="email" name="email" required placeholder="kino@beispiel.de">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefon *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+49 170 1234567">
+            </div>
+
+            <div class="form-group">
+              <label for="stadt">Stadt / Kino-Standort *</label>
+              <input type="text" id="stadt" name="stadt" required placeholder="z. B. Frankfurt, Mainz, Worms">
+            </div>
+
+            <div class="form-group">
+              <label for="format">Gewünschtes Format *</label>
+              <select id="format" name="format" required>
+                <option value="dcp">DCP (Digital Cinema Package)</option>
+                <option value="prores">ProRes / MP4 (High-Res Event-File)</option>
+                <option value="sonstiges">Sonstiges Format</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="spieldaten">Geplante Spielzeiten / Vorführtermine</label>
+              <input type="text" id="spieldaten" name="spieldaten" placeholder="z. B. 15.10.2026 - 20.10.2026 (ca. 3 Vorführungen)">
+            </div>
+
+            <div class="form-group full-width">
+              <label for="nachricht">Zusätzliche Anmerkungen</label>
+              <textarea id="nachricht" name="nachricht" rows="4" placeholder="Besondere Wünsche, Rechnungsadresse oder Details zur Vorführung..."></textarea>
+            </div>
+          </div>
+
+          <div style="text-align: center;">
+            <button type="submit" class="btn-primary">Kinolizenz unverbindlich anfragen</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; Location TV Deluxe. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

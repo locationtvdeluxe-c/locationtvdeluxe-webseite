@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Metadata -->
+    <title>AIDAnova Norwegen Kreuzfahrt: Fjorde & Kopenhagen | Reisefilm | LocationTV Deluxe</title>
+    <meta name="description" content="Ausführlicher Erfahrungsbericht & Reisefilm zur AIDAnova Norwegen-Route ab Kiel. Inklusive Fjord-Highlights in Haugesund, Nordfjordeid & Ålesund, Kopenhagen-Guide und großem Vergleich von AIDA, MSC & Mein Schiff.">
+    <meta name="keywords" content="AIDAnova Norwegen, Kreuzfahrt Fjorde Erfahrungsbericht, Nordfjordeid Landgang, Ålesund Jugendstil, Kopenhagen Kreuzfahrt, AIDA vs Mein Schiff vs MSC, Reisefilm Kreuzfahrt, LocationTV Deluxe">
+    
+    <!-- Umami Analytics -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="807057ad-f9e7-41c7-99c2-14116bdb0aee"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: rgba(22, 27, 34, 0.85);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-gold: #d4af37;
+            --accent-gold-hover: #f1c40f;
+            --accent-cyan: #00f0ff;
+            --text-main: #f0f3f6;
+            --text-muted: #9aa0a6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(0, 240, 255, 0.08) 0%, transparent 70%),
+                radial-gradient(circle at 80% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+            color: var(--text-main);
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            padding: 30px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        /* Hauptnavigation */
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(22, 27, 34, 0.85);
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 30px;
+            padding: 12px 25px;
+            margin-bottom: 35px;
+        }
+
+        .nav-brand {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #ffffff;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .nav-brand span {
+            color: var(--accent-gold);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent-gold);
+        }
+
+        .nav-btn {
+            border: 1px solid var(--accent-gold);
+            padding: 6px 14px;
+            border-radius: 15px;
+            color: var(--accent-gold) !important;
+            background: rgba(212, 175, 55, 0.05);
+            transition: all 0.3s ease !important;
+        }
+
+        .nav-btn:hover {
+            background: var(--accent-gold) !important;
+            color: #000000 !important;
+        }
+
+        @media (max-width: 650px) {
+            .main-nav {
+                flex-direction: column;
+                gap: 12px;
+                padding: 15px;
+                border-radius: 16px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .header h1 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #ffffff;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 35px;
+            margin-bottom: 35px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        .glass-card h2 {
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            padding-bottom: 8px;
+        }
+
+        .glass-card p {
+            margin-bottom: 16px;
+            font-size: 0.98rem;
+        }
+
+        .highlight-box {
+            background: rgba(0, 240, 255, 0.04);
+            border-left: 3px solid var(--accent-cyan);
+            padding: 22px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .highlight-box p {
+            color: var(--text-main);
+            font-style: italic;
+            margin: 0;
+            font-size: 1.02rem;
+        }
+
+        /* Ausführlicher Hafenverlauf */
+        .port-section {
+            margin-top: 30px;
+        }
+
+        .port-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 22px;
+            margin-bottom: 20px;
+        }
+
+        .port-card h3 {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .port-tag {
+            font-size: 0.75rem;
+            background: rgba(0, 240, 255, 0.1);
+            color: var(--accent-cyan);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 400;
+        }
+
+        .port-card p {
+            color: var(--text-muted);
+            font-size: 0.93rem;
+            margin-bottom: 0;
+        }
+
+        /* Reederei-Vergleichs-Raster */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .comp-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-top: 3px solid var(--accent-gold);
+            padding: 18px;
+            border-radius: 10px;
+        }
+
+        .comp-card h4 {
+            color: #ffffff;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .comp-card p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        /* Angebot & Preorder */
+        .offer-card {
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            background: linear-gradient(135deg, rgba(22, 27, 34, 0.9) 0%, rgba(35, 30, 15, 0.8) 100%);
+            text-align: center;
+        }
+
+        .price-badge {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin: 15px 0;
+        }
+
+        .btn-primary {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+            color: #000000;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 16px;
+            border-radius: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, #f1c40f 0%, #d4af37 100%);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Movie",
+          "@id": "https://locationtvdeluxe.com/norwegen.html#movie",
+          "name": "AIDAnova durch Norwegen: Fjorde, Ålesund & Kopenhagen",
+          "description": "Erfahrungsbericht & Reisefilm zur AIDAnova Norwegen-Route ab Kiel mit Fjord-Highlights und Reederei-Vergleich.",
+          "image": "https://locationtvdeluxe.com/assets/norwegen-cover.jpg",
+          "director": {
+            "@type": "People",
+            "name": "Sebastian Eschenfelder & Nadine Breitwieser"
+          },
+          "productionCompany": {
+            "@type": "Organization",
+            "name": "LocationTV Deluxe"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://locationtvdeluxe.mytentary.com/p/reisefilm-norwegen",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/PreOrder",
+            "validFrom": "2026-09-01"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://locationtvdeluxe.com/norwegen.html",
+          "url": "https://locationtvdeluxe.com/norwegen.html",
+          "name": "AIDAnova Norwegen Kreuzfahrt Reisefilm — LocationTV Deluxe",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "LocationTV Deluxe",
+            "url": "https://locationtvdeluxe.com/"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Hauptnavigation -->
+        <nav class="main-nav">
+            <a href="/" class="nav-brand">LOCATIONTV <span>DELUXE</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Startseite</a></li>
+                <li><a href="/norwegen.html" class="active">Norwegen</a></li>
+                <li><a href="/adria.html">Adria</a></li>
+                <li><a href="/bodrum.html">Bodrum</a></li>
+                <li><a href="/backfischfest.html">Backfischfest</a></li>
+                <li><a href="/kino.html" class="nav-btn">🍿 360° Kino</a></li>
+            </ul>
+        </nav>
+
+        <header class="header">
+            <span class="badge">Reisefilm &amp; Ausführlicher Reisebericht</span>
+            <h1>AIDAnova durch Norwegen &amp; Dänemark</h1>
+            <p>Fjorde, Ålesund &amp; Kopenhagen — Der große Erfahrungsbericht von Nadine &amp; Sebastian</p>
+        </header>
+
+        <!-- EINFÜHRUNGSTEXT / DRAMATURGIE -->
+        <section class="glass-card">
+            <h2>Zwei Reisegefühle in einer Woche: Das Konzept der Route</h2>
+            <p>
+                Eine Nordland-Kreuzfahrt ist weit mehr als eine Abfolge geografischer Koordinaten. Auf der Route der <strong>AIDAnova</strong> entfaltet sich ein einzigartiger dramatischer Bogen, der zwei völlig gegensätzliche Welten miteinander verbindet: die majestätische, fast ehrfurchtgebietende Stille der norwegischen Fjorde und die pulsierende, urbane Eleganz der dänischen Hauptstadt Kopenhagen.
+            </p>
+            <p>
+                Das <strong>LocationTV Deluxe Team</strong> – bestehend aus den langjährigen Kreuzfahrtexperten Nadine &amp; Sebastian – hat diese spektakuläre Reise von Kiel aus filmisch begleitet. Ausgerüstet mit modernster Kameratechnik und einem Auge für die leisen Details hinter den Kulissen zeichnet dieser Film nicht nur die imposanten Landschaften nach, sondern bietet fundierte Orientierung für alle, die eine Nordland-Kreuzfahrt planen.
+            </p>
+            <div class="highlight-box">
+                <p>„Dramaturgisch lebt diese Tour vom Kontrast: Norwegen verkörpert Weite, Stille und Naturgewalt. Kopenhagen bringt den bewussten Bruch – Tempo, Kanäle, Architektur und Menschen. Genau diese Spannung trägt den gesamten Reisefilm.“</p>
+            </div>
+        </section>
+
+        <!-- DETAILED ITINERARY / HÄFEN IM DETAIL -->
+        <section class="glass-card">
+            <h2>Sechs Häfen, ein Bogen: Die Etappen der Reise</h2>
+            <p>
+                Die Reise startet im Hafen von Kiel und führt zunächst über zwei ausgedehnte Seetage tief in den Norden. Diese Zeit an Bord gibt dem Körper Raum zum Ankommen, bevor sich die raue Natur Skandinaviens Schritt für Schritt öffnet.
+            </p>
+
+            <div class="port-section">
+                
+                <div class="port-card">
+                    <h3>⚓ Haugesund <span class="port-tag">Küste &amp; Geschichte</span></h3>
+                    <p>
+                        Haugesund empfängt als erster skandinavischer Hafen mit einer rauen, echten Küstenatmosphäre. Hier liegt die Wiege der Wikingerkönige. Die Stadt bildet das perfekte Eingangstor nach Norwegen – geprägt von frischer Meeresbrise, historischen Holzgebäuden und spektakulären Blickwinkeln auf die vorgelagerten Inselketten.
+                    </p>
+                </div>
+
+                <div class="port-card">
+                    <h3>🏔️ Nordfjordeid <span class="port-tag">Echte Fjord-Faszination</span></h3>
+                    <p>
+                        Ein absolutes Highlight der Route: Deep in den Nordfjord eingebettet, liegt das Schiff einen vollen Tag vor Anker. Dies bietet ausreichend Zeit, um die magische Fjordlandschaft in all ihren Lichtstimmungen zu erleben – von den sanften Morgennebeln beim Einlaufen bis zum goldenen Licht der Abendsonne, die sich in den steil aufragenden Felswänden spiegelt.
+                    </p>
+                </div>
+
+                <div class="port-card">
+                    <h3>🏛️ Ålesund <span class="port-tag">Jugendstil am Wasser</span></h3>
+                    <p>
+                        Ålesund gehört zu den optisch faszinierendsten Städten Norwegens. Nach dem großen Stadtbrand von 1904 im prägenden Jugendstil neu erbaut, schmiegen sich die reich verzierten Fassaden direkt an das Meer und die umliegende Inselwelt. Der Blick vom Hausberg Aksla offenbart die einzigartige, dichte Architektur zwischen den Fjorden.
+                    </p>
+                </div>
+
+                <div class="port-card">
+                    <h3>🇩🇰 Kopenhagen <span class="port-tag">Urbaner Kontrast</span></h3>
+                    <p>
+                        Nach zwei entspannten Seetagen auf der Nordsee wechselt die Szenerie radikal: Kopenhagen bringt skandinavische Großstadtkultur, historische Schlossanlagen, bunte Kanäle in Nyhavn und modernes dänisches Design. Dieser Kontrast schärft den Blick für die Vielfalt des Nordens, bevor die Route zurück nach Kiel ihren Kreis schließt.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERTENVERGLEICH REEDEREIEN -->
+        <section class="glass-card">
+            <h2>Der große Experten-Vergleich: AIDA vs. MSC vs. Mein Schiff</h2>
+            <p>
+                Wer eine Nordland-Kreuzfahrt bucht, steht vor der Qual der Wahl der richtigen Reederei. Nadine &amp; Sebastian vergleichen im Reisefilm ehrlich und fundiert das Konzept der <strong>AIDAnova</strong> mit ihren Erfahrungen auf Schiffen von <strong>Mein Schiff (TUI Cruises)</strong> und <strong>MSC Cruises</strong>.
+            </p>
+
+            <div class="comparison-grid">
+                <div class="comp-card">
+                    <h4>AIDA (AIDAnova)</h4>
+                    <p>Fokus auf Vielfalt, Entertainment und flexible Gastronomie. Das Schiff selbst ist eine Erlebniswelt mit Theatrium, Beach Club und riesigem Buffet- und Spezialitätenangebot.</p>
+                </div>
+                <div class="comp-card">
+                    <h4>Mein Schiff</h4>
+                    <p>Ruhigeres Premium-Konzept mit All-Inclusive-Anspruch, Fokus auf Entspannung, ausgefeilte Service-Gastronomie am Platz und großzügige Außenbereich-Flächen.</p>
+                </div>
+                <div class="comp-card">
+                    <h4>MSC Cruises</h4>
+                    <p>Internationales Flair, glamouröses Design, starkes Preis-Leistungs-Verhältnis und exklusive Rückzugsorte wie der Yacht Club für gehobene Ansprüche.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SONDERPREIS & BESTELLUNG -->
+        <section class="glass-card offer-card">
+            <span class="badge" style="background: rgba(212, 175, 55, 0.15);">Vorbestellungs-Aktion</span>
+            <h2>Sichere dir den Reisefilm vorab zum Sonderpreis</h2>
+            <p>
+                Der exklusive Dokumentarfilm zur Norwegen- &amp; Dänemark-Tour erscheint im <strong>September 2026</strong>. Sichere dir das cineastische Highlight mit beeindruckenden Drohnenaufnahmen und wertvollen Tipps für deine eigene Reiseplanung schon jetzt zum Vorteilspreis!
+            </p>
+
+            <div class="price-badge">🎬 EXKLUSIVER SONDERPREIS</div>
+
+            <a href="https://locationtvdeluxe.mytentary.com/p/reisefilm-norwegen" class="btn-primary" target="_blank" rel="noopener">
+                🛒 Jetzt Reisefilm vorbestellen
+            </a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 LOCATIONTV DELUXE. ALL RIGHTS RESERVED.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
