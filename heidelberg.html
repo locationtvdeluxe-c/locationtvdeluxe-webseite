@@ -1,254 +1,540 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Heidelberg Events &amp; Highlights — Kultur, Feste &amp; Schloss | LocationTV Deluxe</title>
-    <meta name="description" content="Die besten Events &amp; Highlights in Heidelberg: Schlossbeleuchtungen, Heidelberger Herbst, Weihnachtsmarkt und spektakuläre Content-Spots. Begleitet von LocationTV Deluxe.">
-    <meta name="keywords" content="Heidelberg Events, Schlossbeleuchtung Heidelberg, Heidelberger Herbst, Weihnachtsmarkt Heidelberg, Heidelberg Content Creation, LocationTV Deluxe, Eventfilm Heidelberg">
+
+    <title>Heidelberg entdecken — Altstadt, Schloss & Neckar | LocationTV Deluxe</title>
+    <meta name="description" content="Wir zeigen euch Heidelberg: Vom Hotel Europäischer Hof durch die Altstadt, Marktplatz, Heiliggeistkirche, Schloss bis zu den Neckarwiesen und dem Pier. Mit LocationTV Deluxe.">
+    <meta name="keywords" content="Heidelberg Stadtführung, Heidelberg Altstadt, Heidelberger Schloss, Marktplatz Heidelberg, Neckarwiesen, Hotel Europäischer Hof, Heidelberg Reisefilm, LocationTV Deluxe">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://locationtvdeluxe.com/heidelberg.html">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <meta property="og:url" content="https://locationtvdeluxe.com/heidelberg.html">
-    <meta property="og:title" content="Heidelberg Events & Highlights | LocationTV Deluxe">
-    <meta property="og:description" content="Schlossbeleuchtung, Heidelberger Herbst, Weihnachtsmarkt – die besten Events in Heidelberg mit LocationTV Deluxe.">
+    <meta property="og:title" content="Heidelberg entdecken – Altstadt, Schloss & Neckar | LocationTV Deluxe">
+    <meta property="og:description" content="Wir zeigen euch Heidelberg: Vom Hotel Europäischer Hof durch die Altstadt bis zu den Neckarwiesen.">
     <meta property="og:image" content="https://locationtvdeluxe.com/assets/img/logo-outline.png">
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="LocationTV Deluxe">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Heidelberg Events & Highlights | LocationTV Deluxe">
-    <meta name="twitter:description" content="Schlossbeleuchtung, Heidelberger Herbst & Weihnachtsmarkt – Heidelberg erleben mit LocationTV Deluxe.">
+    <meta name="twitter:title" content="Heidelberg – Altstadt, Schloss & Neckar | LocationTV Deluxe">
+    <meta name="twitter:description" content="Stadtbummel durch Heidelberg mit LocationTV Deluxe.">
     <meta name="twitter:image" content="https://locationtvdeluxe.com/assets/img/logo-outline.png">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Place","name":"Heidelberg","description":"Events und Highlights in Heidelberg – Schlossbeleuchtung, Heidelberger Herbst, Weihnachtsmarkt. Begleitet von LocationTV Deluxe.","url":"https://locationtvdeluxe.com/heidelberg.html","geo":{"@type":"GeoCoordinates","latitude":49.3988,"longitude":8.6724}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TouristTrip","name":"Heidelberg Stadtführung mit LocationTV Deluxe","description":"Vom Hotel Europäischer Hof durch die Altstadt, Marktplatz, Schloss bis zu den Neckarwiesen.","touristType":"Kulturreisende","itinerary":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"LodgingBusiness","name":"Hotel Europäischer Hof Heidelberg"}},{"@type":"ListItem","position":2,"item":{"@type":"TouristAttraction","name":"Heidelberger Altstadt"}},{"@type":"ListItem","position":3,"item":{"@type":"TouristAttraction","name":"Heidelberger Schloss"}},{"@type":"ListItem","position":4,"item":{"@type":"TouristAttraction","name":"Neckarwiesen Heidelberg"}}]}}</script>
 
     <script defer src="https://cloud.umami.is/script.js" data-website-id="807057ad-f9e7-41c7-99c2-14116bdb0aee"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --bg-color: #0d0f12;
-            --card-bg: rgba(22, 27, 34, 0.75);
-            --border-color: rgba(255, 255, 255, 0.1);
-            --accent-gold: #d4af37;
-            --accent-gold-hover: #f1c40f;
-            --text-main: #f0f3f6;
-            --text-muted: #9aa0a6;
+            --bg: #0d0f12;
+            --card: rgba(20, 24, 30, 0.8);
+            --border: rgba(255,255,255,0.08);
+            --gold: #d4af37;
+            --gold-light: #f1c94e;
+            --text: #eef0f3;
+            --muted: #8a919a;
+            --line: rgba(212,175,55,0.25);
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
-            background-color: var(--bg-color);
-            background-image: 
-                radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%),
-                radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
-            color: var(--text-main);
-            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            padding: 40px 20px;
+            background-color: var(--bg);
+            background-image:
+                radial-gradient(ellipse 80% 40% at 50% -10%, rgba(212,175,55,0.07) 0%, transparent 70%),
+                radial-gradient(ellipse 60% 30% at 80% 80%, rgba(255,255,255,0.02) 0%, transparent 60%);
+            color: var(--text);
+            font-family: 'Montserrat', -apple-system, sans-serif;
+            line-height: 1.65;
             min-height: 100vh;
         }
 
-        .container {
-            max-width: 800px;
+        /* ── NAV ── */
+        nav {
+            padding: 18px 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover { color: var(--gold); }
+        nav .sep { color: var(--border); font-size: 0.8rem; }
+
+        /* ── HERO ── */
+        .hero {
+            text-align: center;
+            padding: 80px 24px 60px;
+            position: relative;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.72rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            border: 1px solid rgba(212,175,55,0.3);
+            padding: 5px 16px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+            background: rgba(212,175,55,0.04);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(2.2rem, 6vw, 3.8rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            text-wrap: balance;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .hero-lead {
+            max-width: 560px;
+            margin: 0 auto 36px;
+            color: var(--muted);
+            font-size: 1.05rem;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .route-pill {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            max-width: 600px;
             margin: 0 auto;
         }
 
-        /* Header Bereich */
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .badge {
-            display: inline-block;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--accent-gold);
-            border: 1px solid var(--accent-gold);
-            padding: 4px 12px;
+        .route-pill span {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border);
             border-radius: 20px;
-            margin-bottom: 15px;
-            background: rgba(212, 175, 55, 0.05);
+            padding: 4px 14px;
+            font-size: 0.78rem;
+            color: var(--muted);
+            letter-spacing: 0.3px;
         }
 
-        .header h1 {
-            font-size: 2.1rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: #ffffff;
-            margin-bottom: 10px;
+        /* ── JOURNEY TIMELINE ── */
+        .journey {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 24px 80px;
+            position: relative;
         }
 
-        .header p {
-            color: var(--text-muted);
-            font-size: 1rem;
-            font-weight: 300;
-        }
-
-        /* Glassmorphism Cards */
-        .glass-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-            overflow: hidden;
-        }
-
-        .glass-card h2 {
-            color: var(--accent-gold);
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .glass-card p {
-            color: var(--text-main);
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-            font-weight: 300;
-        }
-
-        /* Feature Grid */
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin: 25px 0;
+        .journey::before {
+            content: '';
+            position: absolute;
+            left: 48px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent 0%, var(--line) 10%, var(--line) 90%, transparent 100%);
         }
 
         @media (max-width: 600px) {
-            .service-grid {
-                grid-template-columns: 1fr;
-            }
+            .journey::before { left: 28px; }
         }
 
-        .service-item {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--border-color);
-            border-left: 3px solid var(--accent-gold);
-            padding: 18px;
-            border-radius: 10px;
+        .stop {
+            display: grid;
+            grid-template-columns: 56px 1fr;
+            gap: 24px;
+            margin-bottom: 48px;
+            position: relative;
         }
 
-        .service-item h3 {
-            font-size: 1rem;
-            color: #ffffff;
+        @media (max-width: 600px) {
+            .stop { grid-template-columns: 36px 1fr; gap: 16px; }
+        }
+
+        .stop-number {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--bg);
+            border: 1px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 1px;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 600px) {
+            .stop-number { width: 36px; height: 36px; font-size: 0.6rem; }
+        }
+
+        .stop-content {
+            padding-top: 14px;
+        }
+
+        .stop-tag {
+            font-size: 0.68rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
             margin-bottom: 6px;
         }
 
-        .service-item p {
+        .stop-content h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .stop-content p {
+            color: var(--muted);
+            font-size: 0.93rem;
+            font-weight: 300;
+            line-height: 1.75;
+        }
+
+        .stop-content p + p {
+            margin-top: 10px;
+        }
+
+        .stop-highlight {
+            margin-top: 16px;
+            padding: 14px 18px;
+            background: rgba(212,175,55,0.05);
+            border-left: 2px solid var(--gold);
+            border-radius: 0 8px 8px 0;
             font-size: 0.88rem;
-            color: var(--text-muted);
-            margin-bottom: 0;
-        }
-
-        /* Advantages List */
-        .benefits-list {
-            list-style: none;
-            margin: 20px 0;
-            padding: 0;
-        }
-
-        .benefits-list li {
-            position: relative;
-            padding-left: 28px;
-            margin-bottom: 12px;
-            font-size: 0.92rem;
-            color: var(--text-main);
+            color: var(--text);
+            font-style: italic;
             font-weight: 300;
         }
 
-        .benefits-list li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: var(--accent-gold);
-            font-weight: bold;
-            font-size: 1.1rem;
+        /* ── IMAGE PLACEHOLDER ── */
+        .img-placeholder {
+            margin-top: 18px;
+            height: 200px;
+            border-radius: 12px;
+            border: 1px dashed rgba(212,175,55,0.2);
+            background: rgba(255,255,255,0.02);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: rgba(212,175,55,0.3);
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
-        /* Buttons */
-        .btn-primary {
-            display: block;
-            width: 100%;
+        .img-placeholder svg {
+            opacity: 0.3;
+        }
+
+        /* ── FINAL CTA ── */
+        .cta-section {
             text-align: center;
-            background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
-            color: #000000;
-            font-weight: 600;
+            padding: 60px 24px 80px;
+            border-top: 1px solid var(--border);
+        }
+
+        .cta-section h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .cta-section p {
+            color: var(--muted);
             font-size: 0.95rem;
-            padding: 16px;
+            margin-bottom: 28px;
+            font-weight: 300;
+        }
+
+        .btn-gold {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+            color: #000;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 15px 36px;
             border-radius: 30px;
             text-decoration: none;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
-            margin-top: 20px;
+            box-shadow: 0 4px 24px rgba(212,175,55,0.2);
         }
 
-        .btn-primary:hover {
+        .btn-gold:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
-            background: linear-gradient(135deg, #f1c40f 0%, #d4af37 100%);
+            box-shadow: 0 8px 32px rgba(212,175,55,0.35);
+            background: linear-gradient(135deg, #f1c94e 0%, #d4af37 100%);
         }
 
-        .back-link {
-            display: inline-block;
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.85rem;
-            margin-bottom: 20px;
-            transition: color 0.2s ease;
-        }
-
-        .back-link:hover {
-            color: var(--accent-gold);
-        }
-
+        /* ── FOOTER ── */
         footer {
             text-align: center;
-            margin-top: 50px;
+            padding: 30px 24px 40px;
+            border-top: 1px solid var(--border);
             font-size: 0.75rem;
-            color: var(--text-muted);
-            letter-spacing: 1px;
+            color: var(--muted);
+            letter-spacing: 0.5px;
+        }
+
+        footer .team-name {
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-bottom: 4px;
+        }
+
+        footer .team-claim {
+            font-size: 0.8rem;
+            margin-bottom: 14px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+<nav>
+    <a href="/">LocationTV Deluxe</a>
+    <span class="sep">›</span>
+    <a href="/heidelberg.html">Heidelberg</a>
+</nav>
 
-        <a href="/" class="back-link">&larr; Zurück zur Hauptseite</a>
-
-        <header class="header">
-            <span class="badge">Destination &amp; Event Spezial</span>
-            <h1>HEIDELBERG — HIGHLIGHTS &amp; EVENTS</h1>
-            <p>Die schönsten Meilensteine, Traditionen &amp; Kulissen der Romantikstadt</p>
-        </header>
-
-        <footer>
-            <p style="color: #d4af37; font-weight: 600; margin-bottom: 6px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.8rem;">Euer Reisefilm Team</p>
-            <p style="color: #9aa0a6; font-size: 0.8rem; margin-bottom: 10px;">Ihr Spezialist f&#252;r Reise- &amp; Eventfilme.</p>
-            <p>&copy; 2026 LOCATIONTV DELUXE. ALL RIGHTS RESERVED.</p>
-        </footer>
-
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-eyebrow">Stadtbummel · Heidelberg</div>
+    <h1>Wir zeigen euch<br><em>die Stadt</em></h1>
+    <p class="hero-lead">
+        Von der ersten Adresse am Friedrichsplatz bis zum leisen Abend am Neckar-Pier —
+        Heidelberg, wie es nur wenige kennen.
+    </p>
+    <div class="route-pill">
+        <span>Hotel Europäischer Hof</span>
+        <span>Altstadt</span>
+        <span>Hauptstraße</span>
+        <span>Heiliggeistkirche</span>
+        <span>Marktplatz</span>
+        <span>Schloss</span>
+        <span>Neckarwiesen</span>
+        <span>Pier</span>
     </div>
+</section>
+
+<!-- JOURNEY -->
+<div class="journey">
+
+    <!-- STOP 1 -->
+    <div class="stop">
+        <div class="stop-number">01</div>
+        <div class="stop-content">
+            <div class="stop-tag">Startpunkt</div>
+            <h2>Hotel des Europäischen Hofs</h2>
+            <p>
+                Unser Ausgangspunkt ist eine Heidelberger Legende: Das Hotel Europäischer Hof am Friedrichsplatz,
+                seit 1865 erste Adresse der Stadt. Große Namen haben hier übernachtet, breite Fassaden,
+                ruhige Gänge — das richtige Fundament für einen Tag in der Romantikstadt.
+            </p>
+            <p>
+                Wir verlassen das Haus durch den Haupteingang, biegen in Richtung Bismarckplatz ab
+                und tauchen ein.
+            </p>
+            <div class="stop-highlight">„Die Stadt beginnt schon im Foyer."</div>
+            <div class="img-placeholder">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                Foto: Hotel Europäischer Hof
+            </div>
+        </div>
+    </div>
+
+    <!-- STOP 2 -->
+    <div class="stop">
+        <div class="stop-number">02</div>
+        <div class="stop-content">
+            <div class="stop-tag">Altstadt</div>
+            <h2>Durch die Gassen der Altstadt</h2>
+            <p>
+                Die Heidelberger Altstadt ist eine der besterhaltenen barocken Stadtanlagen Deutschlands.
+                Schmale Gässchen öffnen sich zu kleinen Plätzen, alte Fassaden werfen Schatten auf das Kopfsteinpflaster.
+                Wir nehmen uns Zeit — kein Hetzen, kein Programm.
+            </p>
+            <p>
+                Jede Ecke hat eine Geschichte. Die Hauptstraße, eine der längsten Fußgängerzonen Deutschlands,
+                zieht sich wie ein roter Faden durch den Kern der Stadt.
+            </p>
+            <div class="img-placeholder">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                Foto: Altstadt Heidelberg
+            </div>
+        </div>
+    </div>
+
+    <!-- STOP 3 -->
+    <div class="stop">
+        <div class="stop-number">03</div>
+        <div class="stop-content">
+            <div class="stop-tag">Bummeln</div>
+            <h2>Schaufenster, Läden & das langsame Gehen</h2>
+            <p>
+                Heidelberg lebt vom Bummeln. Zwischen Buchläden, Café-Auslagen und Boutiquen
+                mit regionalem Handwerk entschleunigt man unweigerlich.
+                Wir schauen, bleiben stehen, schauen nochmal.
+            </p>
+            <p>
+                Die Hauptstraße wechselt ihren Charakter alle paar hundert Meter:
+                erst international, dann lokal, dann studentisch, dann historisch.
+                Man läuft durch Schichten.
+            </p>
+            <div class="stop-highlight">„Kein Stadtbummel ohne ein ungeplantes Stehenbleiben."</div>
+            <div class="img-placeholder">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                Foto: Hauptstraße Geschäfte
+            </div>
+        </div>
+    </div>
+
+    <!-- STOP 4 -->
+    <div class="stop">
+        <div class="stop-number">04</div>
+        <div class="stop-content">
+            <div class="stop-tag">Kirche & Marktplatz</div>
+            <h2>Heiliggeistkirche & Marktplatz</h2>
+            <p>
+                Der Marktplatz ist das Herz der Altstadt. Ringsum alte Handelshäuser,
+                in der Mitte der Herkulesbrunnen — und darüber thront die Heiliggeistkirche,
+                deren Turm sich über die Dächer des gesamten Tals erhebt.
+            </p>
+            <p>
+                Die Kirche selbst ist ein Wechselbad der Geschichte: jahrhundertelang gemeinsam genutzt
+                von Protestanten und Katholiken, getrennt durch eine Mauer im Inneren.
+                Heute trägt sie diese Geschichte still in jedem Stein.
+            </p>
+            <div class="img-placeholder">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                Foto: Heiliggeistkirche & Marktplatz
+            </div>
+        </div>
+    </div>
+
+    <!-- STOP 5 -->
+    <div class="stop">
+        <div class="stop-number">05</div>
+        <div class="stop-content">
+            <div class="stop-tag">Wahrzeichen</div>
+            <h2>Heidelberger Schloss</h2>
+            <p>
+                Kein Besuch ohne den Aufstieg. Das Heidelberger Schloss — halb Ruine, halb Palast —
+                ist eines der bedeutendsten Renaissancebauwerke nördlich der Alpen.
+                Der Blick vom Schlossgarten über die Altstadt und den Neckar ist das Bild,
+                das man mitnimmt.
+            </p>
+            <p>
+                Wir gehen zu Fuß über den Schlossberg. Der Weg lohnt sich,
+                weil die Stadt in jeder Kurve eine andere Perspektive freigibt.
+                Oben wartet das Fassgebäude mit dem größten Weinholzfass der Welt — 221.000 Liter.
+            </p>
+            <div class="stop-highlight">„Das Schloss ist keine Sehenswürdigkeit. Es ist ein Erlebnis."</div>
+            <div class="img-placeholder">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                Foto: Heidelberger Schloss
+            </div>
+        </div>
+    </div>
+
+    <!-- STOP 6 -->
+    <div class="stop">
+        <div class="stop-number">06</div>
+        <div class="stop-content">
+            <div class="stop-tag">Natur & Weite</div>
+            <h2>Neckarwiesen</h2>
+            <p>
+                Zurück unten, auf der anderen Seite des Flusses: die Neckarwiesen.
+                Eine breite Grünfläche, auf der Heidelberg durchatmet.
+                Studierende mit Büchern, Familien mit Fahrrädern, Enten im Flachwasser.
+            </p>
+            <p>
+                Von hier aus ist die Alte Brücke mit dem Stadttor so zu sehen,
+                wie sie auf tausend Postkarten abgebildet ist — nur dass es diesmal echt ist.
+                Das Schloss im Hintergrund, der Odenwald dahinter.
+            </p>
+            <div class="img-placeholder">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                Foto: Neckarwiesen mit Brücke
+            </div>
+        </div>
+    </div>
+
+    <!-- STOP 7 -->
+    <div class="stop">
+        <div class="stop-number">07</div>
+        <div class="stop-content">
+            <div class="stop-tag">Endpunkt</div>
+            <h2>Am Pier des Neckars</h2>
+            <p>
+                Den Tag beschließen wir am Pier. Das Wasser zieht langsam vorbei,
+                die Stadt liegt hinter uns im Abendlicht, das Schloss wirft seinen letzten Schatten
+                auf die Dächer der Altstadt.
+            </p>
+            <p>
+                Hier ist Heidelberg leise. Kein Touristenstrom, kein Lärm —
+                nur der Fluss, der Odenwald und das Gefühl, eine Stadt wirklich gesehen zu haben.
+            </p>
+            <div class="stop-highlight">„Am Ende bleibt das Wasser. Und das Licht auf dem Schloss."</div>
+            <div class="img-placeholder">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                Foto: Neckar Pier Abendstimmung
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- CTA -->
+<section class="cta-section">
+    <h3>Den ganzen Film sehen</h3>
+    <p>Unsere Heidelberg-Reportage — alle Stationen, alle Momente, in Bewegtbild.</p>
+    <a href="/" class="btn-gold">Zurück zur Übersicht</a>
+</section>
+
+<footer>
+    <p class="team-name">Euer Reisefilm Team</p>
+    <p class="team-claim">Ihr Spezialist für Reise- &amp; Eventfilme.</p>
+    <p>&copy; 2026 LOCATIONTV DELUXE. ALL RIGHTS RESERVED.</p>
+    <p style="margin-top:10px;"><a href="/impressum.html" style="color:inherit;text-decoration:none;margin-right:16px;">Impressum</a><a href="/datenschutz.html" style="color:inherit;text-decoration:none;">Datenschutz</a></p>
+</footer>
 
 </body>
 </html>
