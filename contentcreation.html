@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO & Metadata -->
-    <title>Content Creation &amp; Masterclass — Power-Duo für Social Media | LocationTV Deluxe</title>
-    <meta name="description" content="Sebastian &amp; Nadine – Euer Power-Duo für Social Media Content Creation &amp; Schulungen. 1:1 Coaching, Workshops &amp; Online-Akademie für Firmen, Mittelstand und Selbstständige.">
+    <title>Content Creation & Masterclass — Power-Duo für Social Media | LocationTV Deluxe</title>
+    <meta name="description" content="Sebastian & Nadine – Euer Power-Duo für Social Media Content Creation & Schulungen. 1:1 Coaching, Workshops & Online-Akademie für Firmen, Mittelstand und Selbstständige.">
     <meta name="keywords" content="Content Power Masterclass, Content Creation Schulung, Social Media Workshop, 1 zu 1 Coaching, Online Akademie, Videoproduktion Schulung, Firmen Workshop Social Media, LocationTV Deluxe">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://locationtvdeluxe.com/contentcreation.html">
@@ -261,6 +261,41 @@
     </style>
 </head>
 <body>
+<style>
+.ltv-nav { background: #1a1a1a; color: #fff; position: sticky; top: 0; z-index: 1000; font-family: system-ui, -apple-system, sans-serif; }
+.ltv-nav-inner { max-width: 1200px; margin: 0 auto; padding: 0.75rem 1.2rem; display: flex; justify-content: space-between; align-items: center; }
+.ltv-nav-logo { color: #fff; text-decoration: none; font-weight: 700; letter-spacing: 1px; font-size: 1.05rem; }
+.ltv-nav-links { display: flex; list-style: none; gap: 1.5rem; margin: 0; padding: 0; }
+.ltv-nav-links a { color: #fff; text-decoration: none; font-size: 0.95rem; padding: 0.3rem 0; border-bottom: 2px solid transparent; }
+.ltv-nav-links a:hover, .ltv-nav-links a.ltv-active { color: #E8312F; border-bottom-color: #E8312F; }
+.ltv-nav-toggle { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
+@media (max-width: 760px) {
+  .ltv-nav-toggle { display: block; }
+  .ltv-nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #1a1a1a; padding: 1rem 1.2rem; gap: 0.8rem; }
+  .ltv-nav-links.ltv-open { display: flex; }
+}
+</style>
+<nav class="ltv-nav">
+  <div class="ltv-nav-inner">
+    <a href="/" class="ltv-nav-logo">LOCATIONTV DELUXE</a>
+    <button class="ltv-nav-toggle" aria-label="Menü" onclick="document.querySelector('.ltv-nav-links').classList.toggle('ltv-open')">☰</button>
+    <ul class="ltv-nav-links">
+      <li><a href="/weihnachtsmarkt.html">Weihnachtsmärkte</a></li>
+      <li><a href="/">Reisefilme</a></li>
+      <li><a href="/Weihnachtsmarkt-Audio-Guide.html">Hörbücher</a></li>
+      <li><a href="/kontakt.html">Kontakt</a></li>
+      <li><a href="/impressum.html">Impressum</a></li>
+    </ul>
+  </div>
+</nav>
+<script>
+(function(){
+  const path = location.pathname;
+  document.querySelectorAll('.ltv-nav-links a').forEach(a => {
+    if (a.getAttribute('href') === path || (path === '/' && a.getAttribute('href') === '/')) a.classList.add('ltv-active');
+  });
+})();
+</script>
 
     <div class="container">
 
@@ -268,20 +303,20 @@
 
         <!-- Brand Header -->
         <header class="header">
-            <span class="badge">Social Media &amp; Masterclass</span>
-            <h1>CONTENT CREATION &amp; MEDIA PRODUCER</h1>
-            <p>Euer Power-Duo für Produktion, Coaching &amp; Firmen-Workshops</p>
+            <span class="badge">Social Media & Masterclass</span>
+            <h1>CONTENT CREATION & MEDIA PRODUCER</h1>
+            <p>Euer Power-Duo für Produktion, Coaching & Firmen-Workshops</p>
         </header>
 
         <!-- Intro Sektion -->
         <section class="glass-card">
-            <h2>Wir machen Erlebnisse &amp; Events lebendig</h2>
+            <h2>Wir machen Erlebnisse & Events lebendig</h2>
             <p style="text-align: center;">
-                Als eingespieltes Power-Duo – <strong>Sebastian &amp; Nadine</strong> – fangen wir die Energie von Events, Konzerten, Locations und Marken ein. Wir lassen Zuschauer und Besucher hautnah am Geschehen teilhaben – professionell, dynamisch und nahbar.
+                Als eingespieltes Power-Duo – <strong>Sebastian & Nadine</strong> – fangen wir die Energie von Events, Konzerten, Locations und Marken ein. Wir lassen Zuschauer und Besucher hautnah am Geschehen teilhaben – professionell, dynamisch und nahbar.
             </p>
 
             <div class="platform-tags">
-                <span class="platform-badge">📸 Instagram Reels &amp; Stories</span>
+                <span class="platform-badge">📸 Instagram Reels & Stories</span>
                 <span class="platform-badge">🎵 TikTok Formate</span>
                 <span class="platform-badge">👥 Facebook Media</span>
             </div>
@@ -304,11 +339,11 @@
                     <p>Butterweiche, kinetische Kamerafahrten für dynamischen Short-Form-Content, der flüssig wirkt und den Blick des Zuschauers fesselt.</p>
                 </div>
                 <div class="service-item">
-                    <h3>🎙️ Drahtlose Mikrofon-Systeme</h3>
+                    <h3>🎙 Drahtlose Mikrofon-Systeme</h3>
                     <p>Glasklare Sprachqualität für erstklassige Interview-Führung, Vor-Ort-Statements, Backstage-Reports und Dialoge – ohne störende Nebengeräusche.</p>
                 </div>
                 <div class="service-item">
-                    <h3>🔄 360°-Kamera &amp; B-Roll Magic</h3>
+                    <h3>🔄 360°-Kamera & B-Roll Magic</h3>
                     <p>Interaktive Aufnahmen durch Räume, spektakuläre B-Roll-Cuts, exklusive Backstage-Impressionen sowie mitreißende Event- und Konzert-Momente.</p>
                 </div>
             </div>
@@ -329,7 +364,7 @@
                     </div>
                     <div class="service-item">
                         <h3>👥 Corporate Workshops</h3>
-                        <p>Praxisnahe Team-Schulungen vor Ort oder online: Von der Ideenfindung über Smartphone-Filmen &amp; Licht-Setups bis zum schnellen Cut.</p>
+                        <p>Praxisnahe Team-Schulungen vor Ort oder online: Von der Ideenfindung über Smartphone-Filmen & Licht-Setups bis zum schnellen Cut.</p>
                     </div>
                     <div class="service-item" style="grid-column: 1 / -1;">
                         <h3>🎓 Online Akademie</h3>
@@ -356,7 +391,7 @@
 
         <footer>
             <p style="color: #d4af37; font-weight: 600; margin-bottom: 6px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.8rem;">Euer Reisefilm Team</p>
-            <p style="color: #9aa0a6; font-size: 0.8rem; margin-bottom: 10px;">Ihr Spezialist f&#252;r Reise- &amp; Eventfilme.</p>
+            <p style="color: #9aa0a6; font-size: 0.8rem; margin-bottom: 10px;">Ihr Spezialist f&#252;r Reise- & Eventfilme.</p>
             <p>&copy; 2026 LOCATIONTV DELUXE. ALL RIGHTS RESERVED.</p>
         </footer>
 
