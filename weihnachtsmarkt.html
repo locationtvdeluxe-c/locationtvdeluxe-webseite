@@ -108,9 +108,9 @@
     .header-text .price { font-style: italic; color: #555; font-size: 0.98rem; }
     .buy-btn { display: inline-block; background: #E8312F; color: #fff; font-weight: 700; padding: 12px 26px; border-radius: 6px; text-decoration: none; margin: 6px 0 4px; }
     .buy-btn:hover { background: #c4211f; }
-    .films, .termine, .faq { max-width: 1100px; margin: 2rem auto; padding: 0 1.2rem 3rem; }
-    .films h2, .termine h2, .faq h2 { font-size: 1.6rem; margin-bottom: 1rem; text-align: center; }
-    .films p, .termine p, .faq p { font-size: 1.05rem; margin-bottom: 1rem; }
+    .films, .termine, .faq, .talk { max-width: 1100px; margin: 2rem auto; padding: 0 1.2rem 3rem; }
+    .films h2, .termine h2, .faq h2, .talk h2 { font-size: 1.6rem; margin-bottom: 1rem; text-align: center; }
+    .films p, .termine p, .faq p, .talk p { font-size: 1.05rem; margin-bottom: 1rem; }
     .films ul { margin: 1rem 0 1.5rem 1.5rem; }
     .films li { margin-bottom: 0.4rem; }
     .termine h3 { font-size: 1.25rem; margin: 1.4rem 0 0.4rem; color: #E8312F; }
@@ -120,6 +120,8 @@
     .internal-links { background: #f0ebe3; padding: 1.2rem; border-radius: 8px; margin: 2rem 0; }
     .internal-links a { color: #E8312F; font-weight: 600; text-decoration: none; }
     .internal-links a:hover { text-decoration: underline; }
+    .talk-cover { max-width: 420px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 6px 24px rgba(0,0,0,0.15); margin: 0.5rem auto 1.2rem; display: block; }
+    .audio-preview { width: 100%; max-width: 480px; margin: 0.5rem auto 1.2rem; display: block; }
     @media (max-width: 760px) {
       .header { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.2rem; }
       .header-text h1 { font-size: 1.5rem; }
@@ -175,6 +177,18 @@
       <p style="font-size:0.95rem;">🇬🇧 <a href="/christmas-markets.html" hreflang="en">English version: Christmas Market Guide 2026</a></p>
     </div>
   </header>
+
+  <section class="talk">
+    <h2>Deluxe Talk: Weihnachtsmärkte 2026</h2>
+    <img class="talk-cover" src="images/cover-talk-weihnachtsmärkte.JPG" alt="Deluxe Talk: Weihnachtsmärkte 2026 – Cover von Nadine & Sebastian">
+    <p><strong>Hört rein – kurze Vorschau zum deutschen Audio-Guide:</strong></p>
+    <audio class="audio-preview" controls preload="none">
+      <source src="audio/de-talk-vorschau-weihnachtsmaerkte.mp3" type="audio/mpeg">
+      Dein Browser unterstützt das Audio-Element nicht.
+    </audio>
+    <p>45 Minuten Insider-Talk von Nadine und Sebastian – ehrlich, persönlich und mit echten Tipps von unseren Besuchen auf den Weihnachtsmärkten.</p>
+    <p><a href="/Weihnachtsmarkt-Audio-Guide.html">Zum Deluxe Talk Audio-Guide →</a></p>
+  </section>
 
   <section class="termine">
     <h2>Weihnachtsmärkte 2026 in Rhein-Main & Pfalz: alle Termine im Überblick</h2>
