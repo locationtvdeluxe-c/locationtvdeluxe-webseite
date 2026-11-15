@@ -26,6 +26,7 @@
     .content ul { margin: 1rem 0 1.5rem 1.5rem; }
     .content li { margin-bottom: 0.4rem; }
     .content strong { font-weight: 700; }
+    .audio-preview { width: 100%; max-width: 480px; margin: 0.5rem auto 1.2rem; display: block; }
     @media (max-width: 760px) {
       .header { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.2rem; }
       .header-text h1 { font-size: 1.5rem; }
@@ -77,6 +78,16 @@
       <p>Hört rein, bevor ihr losfahrt, ganz entspannt im Auto, im Zug oder auf dem Sofa. So wisst ihr vorher, welcher Markt zu euch passt, worauf ihr achten solltet und was ihr auf keinen Fall verpassen dürft.</p>
     </div>
   </header>
+
+  <section class="content">
+    <h2>Kurze Vorschau hören</h2>
+    <p><strong>Hört rein – die Vorschau zum deutschen Deluxe Talk:</strong></p>
+    <audio class="audio-preview" controls preload="none">
+      <source src="audio/de-talk-vorschau-weihnachtsmaerkte.mp3" type="audio/mpeg">
+      Dein Browser unterstützt das Audio-Element nicht.
+    </audio>
+    <p>45 Minuten Insider-Talk von Nadine und Sebastian – ehrlich, persönlich und mit echten Tipps von unseren Besuchen.</p>
+  </section>
 
   <section class="content">
     <h2>Was euch im Audio-Guide erwartet</h2>
