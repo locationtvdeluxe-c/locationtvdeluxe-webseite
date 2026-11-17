@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
     <!-- Hauptseite -->
     <url>
@@ -65,6 +66,39 @@
         <lastmod>2026-11-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="https://locationtvdeluxe.com/kreuzfahrt-abc-inseln.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://locationtvdeluxe.com/abc-islands-cruise.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://locationtvdeluxe.com/kreuzfahrt-abc-inseln.html"/>
+    </url>
+
+    <url>
+        <loc>https://locationtvdeluxe.com/abc-islands-cruise.html</loc>
+        <lastmod>2026-11-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="https://locationtvdeluxe.com/kreuzfahrt-abc-inseln.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://locationtvdeluxe.com/abc-islands-cruise.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://locationtvdeluxe.com/kreuzfahrt-abc-inseln.html"/>
+    </url>
+
+    <url>
+        <loc>https://locationtvdeluxe.com/kreuzfahrt-mittelamerika.html</loc>
+        <lastmod>2026-11-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="https://locationtvdeluxe.com/kreuzfahrt-mittelamerika.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://locationtvdeluxe.com/central-america-cruise.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://locationtvdeluxe.com/kreuzfahrt-mittelamerika.html"/>
+    </url>
+
+    <url>
+        <loc>https://locationtvdeluxe.com/central-america-cruise.html</loc>
+        <lastmod>2026-11-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="https://locationtvdeluxe.com/kreuzfahrt-mittelamerika.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://locationtvdeluxe.com/central-america-cruise.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://locationtvdeluxe.com/kreuzfahrt-mittelamerika.html"/>
     </url>
 
     <url>
