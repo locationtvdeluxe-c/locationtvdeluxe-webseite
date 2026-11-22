@@ -43,9 +43,16 @@
     .cm-footer a { color: #E8312F; }
     .audio-cover { max-width: 480px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 6px 24px rgba(0,0,0,0.15); margin: 1rem auto 1.5rem; display: block; }
     .audio-preview { width: 100%; max-width: 480px; margin: 0.5rem auto 1.2rem; display: block; }
+    .offers { max-width: 1100px; margin: 0 auto; padding: 0 1.2rem 2rem; }
+    .offers h2 { font-size: 1.45rem; margin-bottom: 1rem; text-align: center; }
+    .offers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .offer { background: #fff; border: 1px solid #e5e0d8; border-radius: 8px; padding: 1.2rem 1.4rem; }
+    .offer h3 { font-size: 1.15rem; color: #E8312F; margin-bottom: 0.5rem; }
+    .offer p { font-size: 1.05rem; margin-bottom: 0.7rem; }
     @media (max-width: 760px) {
       .header { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.2rem; }
       .header-text h1 { font-size: 1.5rem; }
+      .offers-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -96,9 +103,24 @@
       <p>Stepping off a Rhine river cruise or planning a winter trip to Germany? Experience the magic of the famous <em>Weihnachtsmarkt der Nationen</em> through the eyes of locals who were actually there.</p>
       <p>We've visited the market ourselves and share honest impressions, stall recommendations, and highlights. Now available as both a detailed PDF guide and a new English audio guide.</p>
       <p class="price">PDF Guide, 30 pages, optimised for your phone · honest, personal and in English · €20</p>
-      <p><a class="buy-btn" href="https://copecart.com/products/5d0b45c9/checkout" target="_blank" rel="noopener">Buy the PDF Guide – €20</a></p>
     </div>
   </header>
+
+  <section class="offers" aria-label="English PDF guide and audio guide">
+    <h2>The English PDF Guide and the Deluxe Talk Audio Guide</h2>
+    <div class="offers-grid">
+      <div class="offer">
+        <h3>English PDF Guide</h3>
+        <p>30 pages, optimised for your phone · honest, personal and in English · €20</p>
+        <p><a class="buy-btn" href="https://copecart.com/products/5d0b45c9/checkout" target="_blank" rel="noopener">Buy the PDF Guide – €20</a></p>
+      </div>
+      <div class="offer">
+        <h3>Deluxe Talk Audio Guide</h3>
+        <p>Our English audio guide is ready and available now. Listen before you go – perfect for the car, train or sofa.</p>
+        <p><a class="buy-btn" href="https://copecart.com/products/c565b21c/checkout" target="_blank" rel="noopener">Buy the Audio Guide – Deluxe Talk</a></p>
+      </div>
+    </div>
+  </section>
 
   <section class="termine">
     <h2>What to Expect at the Rüdesheim Christmas Market</h2>
@@ -148,7 +170,7 @@
 
   <footer class="cm-footer">
     <p>&copy; 2026 Sebastian & Nadine / LocationTV Deluxe</p>
-    <p><a href="/impressum.html">Impressum</a> | <a href="/datenschutz.html">Datenschutz</a> | <a href="/kontakt.html">Kontakt</a></p>
+    <p><a href="/impressum.html">Imprint</a> | <a href="/datenschutz.html">Privacy</a> | <a href="/kontakt.html">Kontakt</a></p>
   </footer>
 
 </body>
